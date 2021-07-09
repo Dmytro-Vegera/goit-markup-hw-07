@@ -94,14 +94,13 @@ img {
   transition: fill, background-color var(--transition-duration) var(--timing-function);
 }
 
-.social__link .social__icon:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social__link:hover,
-.social__link:focus {
+.social__link:hover, .social__link:focus {
   background-color: var(--accent-color);
   fill: var(--secondary-text-color);
+}
+
+.social__link .social__icon:not(:last-child) {
+  margin-right: 10px;
 }
 
 .backdrop {
@@ -204,10 +203,6 @@ img {
   cursor: pointer;
 }
 
-.modal-form__input:focus + .modal-form__icon {
-  fill: var(--accent-color);
-}
-
 .modal-form__icon {
   position: absolute;
   top: 50%;
@@ -217,6 +212,10 @@ img {
   background-color: #fff;
   color: var(--title-text-color);
   transition: fill var(--transition-duration) var(--timing-function);
+}
+
+.modal-form__input:focus + .modal-form__icon {
+  fill: var(--accent-color);
 }
 
 .modal-form__comment {
@@ -230,18 +229,18 @@ img {
   transition: border var(--transition-duration) var(--timing-function);
 }
 
+.modal-form__comment:focus {
+  border-color: var(--accent-color);
+  outline: none;
+  cursor: pointer;
+}
+
 .modal-form__comment::placeholder {
   font-size: 14px;
   line-height: 1.143px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
   padding-top: 8px;
-}
-
-.modal-form__comment:focus {
-  border-color: var(--accent-color);
-  outline: none;
-  cursor: pointer;
 }
 
 /* Checkbox*/
@@ -263,11 +262,6 @@ img {
   color: var(--primary-text-color);
 }
 
-.modal-form__policy-link {
-  text-decoration-line: underline;
-  color: var(--accent-color);
-}
-
 .modal-form__checkbox-policy::before {
   content: '';
   background-image: url("../images/icons/modal/form/vector.svg");
@@ -275,6 +269,11 @@ img {
 
 .modal-form__checkbox:checked + .modal-form__checkbox-policy::before {
   background-image: url("../images/icons/modal/form/check.svg");
+}
+
+.modal-form__policy-link {
+  text-decoration-line: underline;
+  color: var(--accent-color);
 }
 
 .modal-form__btn {
@@ -296,8 +295,7 @@ img {
   transition: background-color var(--transition-duration) var(--timing-function);
 }
 
-.modal-form__btn:hover,
-.modal-form__btn:focus {
+.modal-form__btn:hover, .modal-form__btn:focus {
   background-color: #188ce8;
 }
 
@@ -324,8 +322,7 @@ img {
 }
 
 .logo:hover,
-.logo:hover .studio,
-.logo:focus,
+.logo:hover .studio, .logo:focus,
 .logo:focus .studio {
   color: var(--accent-color);
 }
@@ -387,10 +384,6 @@ img {
   margin-right: 30px;
 }
 
-.nav__item > a {
-  display: flex;
-}
-
 .nav-contact__list .link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -405,6 +398,10 @@ img {
 .nav-contact__list .link:hover,
 .nav-contact__list .link:focus {
   color: var(--accent-color);
+}
+
+.nav__item > a {
+  display: flex;
 }
 
 .nav__icon {
@@ -456,8 +453,7 @@ img {
   transition: background-color var(--transition-duration) var(--timing-function);
 }
 
-.hero__btn:hover,
-.hero__btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: var(--accent-btn-color);
 }
 
@@ -510,14 +506,6 @@ img {
   padding-top: 0;
 }
 
-.doing__list {
-  display: flex;
-}
-
-.doing__list .doing__item:not(:last-child) {
-  margin-right: 30px;
-}
-
 .doing__item {
   position: relative;
   z-index: -1;
@@ -542,16 +530,16 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.team {
-  background-color: var(--third-bg-color);
-}
-
-.team__list {
+.doing__list {
   display: flex;
 }
 
-.team__list .team__item:not(:last-child) {
+.doing__list .doing__item:not(:last-child) {
   margin-right: 30px;
+}
+
+.team {
+  background-color: var(--third-bg-color);
 }
 
 .team__item {
@@ -577,6 +565,14 @@ img {
   font-size: 16px;
   line-height: 1.187;
   letter-spacing: 0.03em;
+}
+
+.team__list {
+  display: flex;
+}
+
+.team__list .team__item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .client__title {
@@ -606,15 +602,14 @@ img {
   transition: color, border-color var(--transition-duration) var(--timing-function);
 }
 
+.client__link:hover, .client__link:focus {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
 .client__icon {
   display: block;
   fill: currentColor;
-}
-
-.client__link:hover,
-.client__link:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
 }
 
 .footer {
@@ -658,13 +653,12 @@ img {
   transition: color var(--transition-duration) var(--timing-function);
 }
 
-.footer-contact__list .contact-footer:not(:last-child) {
-  margin-bottom: 9px;
+.footer-contact__item .link:hover, .footer-contact__item .link:focus {
+  color: var(--accent-color);
 }
 
-.footer-contact__item .link:hover,
-.footer-contact__item .link:focus {
-  color: var(--accent-color);
+.footer-contact__list .contact-footer:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* Footer social */
@@ -702,8 +696,7 @@ img {
   transition: background-color var(--transition-duration) var(--timing-function);
 }
 
-.footer-social__link:hover,
-.footer-social__link:focus {
+.footer-social__link:hover, .footer-social__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -780,14 +773,13 @@ img {
   transition: background-color var(--transition-duration) var(--timing-function);
 }
 
+.footer-form__subscribe-btn:hover, .footer-form__subscribe-btn:focus {
+  background-color: #188ce8;
+}
+
 .footer-form__icon {
   margin-left: 10px;
   fill: currentColor;
-}
-
-.footer-form__subscribe-btn:hover,
-.footer-form__subscribe-btn:focus {
-  background-color: #188ce8;
 }
 
 .filter__list {
@@ -814,9 +806,7 @@ img {
   transition: color, background-color, box-shadow var(--transition-duration) var(--timing-function);
 }
 
-.filter__btn:hover,
-.filter__btn:focus,
-.filter__btn:active {
+.filter__btn:hover, .filter__btn:focus, .filter__btn:active {
   color: var(--secondary-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -841,8 +831,7 @@ img {
   transition: box-shadow var(--transition-duration) var(--timing-function);
 }
 
-.project__link:hover,
-.project__link:focus {
+.project__link:hover, .project__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 

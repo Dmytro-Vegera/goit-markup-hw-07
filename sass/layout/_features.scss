@@ -1,10 +1,10 @@
 .features__list {
   display: flex;
   align-items: center;
-}
 
-.features__list .features__item:not(:last-child) {
-  margin-right: 30px;
+  & .features__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features__item {

@@ -17,14 +17,14 @@
   fill: var(--icon-color);
   transition: fill,
     background-color var(--transition-duration) var(--timing-function);
-}
 
-.social__link .social__icon:not(:last-child) {
-  margin-right: 10px;
-}
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--secondary-text-color);
+  }
 
-.social__link:hover,
-.social__link:focus {
-  background-color: var(--accent-color);
-  fill: var(--secondary-text-color);
+  & .social__icon:not(:last-child) {
+    margin-right: 10px;
+  }
 }

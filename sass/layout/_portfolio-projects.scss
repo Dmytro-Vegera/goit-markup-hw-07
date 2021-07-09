@@ -3,44 +3,44 @@
   flex-wrap: wrap;
   margin-left: calc(-1 * var(--project-list-gap));
   margin-top: calc(-1 * var(--project-list-gap));
-}
 
-.project__list > .project__item {
-  flex-basis: calc(100% / 3 - var(--project-list-gap));
-  margin-left: var(--project-list-gap);
-  margin-top: var(--project-list-gap);
+  & > .project__item {
+    flex-basis: calc(100% / 3 - var(--project-list-gap));
+    margin-left: var(--project-list-gap);
+    margin-top: var(--project-list-gap);
+  }
 }
 
 .project__link {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   transition: box-shadow var(--transition-duration) var(--timing-function);
-}
 
-.project__link:hover,
-.project__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
 .project-content {
   margin: 20px 24px;
-}
 
-.project-content__title {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--title-text-color);
-}
+  &__title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+  }
 
-.project-content__text {
-  margin-top: 4px;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  &__text {
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+  }
 }
 
 .project-overlay-img {
@@ -60,19 +60,19 @@
   background: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform var(--transition-duration) var(--timing-function);
-}
 
-.project-overlay__text {
-  justify-content: left;
-  width: 322px;
-  font-size: 18px;
-  line-height: 1.556;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
+  &__text {
+    justify-content: left;
+    width: 322px;
+    font-size: 18px;
+    line-height: 1.556;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+  }
 
-.project__link:hover .project-overlay,
-.project__link:focus .project-overlay {
-  opacity: 1;
-  transform: translateY(0%);
+  .project__link:hover &,
+  .project__link:focus & {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }

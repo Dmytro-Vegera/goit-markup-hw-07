@@ -37,15 +37,15 @@
   letter-spacing: 0.03em;
   color: var(--contact-text-color);
   transition: color var(--transition-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-contact__list .contact-footer:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.footer-contact__item .link:hover,
-.footer-contact__item .link:focus {
-  color: var(--accent-color);
 }
 
 /* Footer social */
@@ -82,11 +82,11 @@
   fill: var(--primary-bg-color);
   background: rgba(255, 255, 255, 0.1);
   transition: background-color var(--transition-duration) var(--timing-function);
-}
 
-.footer-social__link:hover,
-.footer-social__link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 /* Footer form */
@@ -123,12 +123,12 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   transition: border-color var(--transition-duration) var(--timing-function);
-}
 
-.footer-form__subscribe-field:focus {
-  border-color: var(--accent-color);
-  outline: none;
-  cursor: pointer;
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+    cursor: pointer;
+  }
 }
 
 .footer-form__subscribe-label {
@@ -161,14 +161,14 @@
   letter-spacing: 0.06em;
   cursor: pointer;
   transition: background-color var(--transition-duration) var(--timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }
 
 .footer-form__icon {
   margin-left: 10px;
   fill: currentColor;
-}
-
-.footer-form__subscribe-btn:hover,
-.footer-form__subscribe-btn:focus {
-  background-color: #188ce8;
 }
